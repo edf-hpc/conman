@@ -13,7 +13,8 @@ Package: conman
 Architecture: any
 Depends:
  ${shlibs:Depends},
- ${misc:Depends}
+ ${misc:Depends},
+ expect
 Description: serial console management program
  This package contains a serial console management program designed to
  support a large number of console devices and simultaneous users.

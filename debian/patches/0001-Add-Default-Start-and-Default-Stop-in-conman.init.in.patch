@@ -1,0 +1,22 @@
+From: Mehdi Dogguy <mehdi@debian.org>
+Date: Tue, 1 Oct 2013 17:04:29 +0200
+Subject: Add Default-Start and Default-Stop in conman.init.in
+
+---
+ etc/conman.init.in |    2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/etc/conman.init.in b/etc/conman.init.in
+index 1946998..1d56c5d 100644
+--- a/etc/conman.init.in
++++ b/etc/conman.init.in
+@@ -16,6 +16,8 @@
+ # Required-Stop:      $local_fs $named $network
+ # Should-Start:       $remote_fs $syslog $time
+ # Should-Stop:        $remote_fs $syslog $time
++# Default-Start:      2 3 4 5
++# Default-Stop:       0 1 6
+ # Short-Description:  Start/Stop the ConMan (serial console manager) daemon.
+ # Description:        Start/Stop the ConMan (serial console manager) daemon.
+ ### END INIT INFO
+-- 

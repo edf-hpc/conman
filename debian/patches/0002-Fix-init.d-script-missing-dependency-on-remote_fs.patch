@@ -1,0 +1,24 @@
+From: Mehdi Dogguy <mehdi@debian.org>
+Date: Tue, 1 Oct 2013 17:22:43 +0200
+Subject: Fix init.d-script-missing-dependency-on-remote_fs
+
+---
+ etc/conman.init.in |    4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/etc/conman.init.in b/etc/conman.init.in
+index 1d56c5d..d5f1a21 100644
+--- a/etc/conman.init.in
++++ b/etc/conman.init.in
+@@ -12,8 +12,8 @@
+ ###############################################################################
+ ### BEGIN INIT INFO
+ # Provides:           conman
+-# Required-Start:     $local_fs $named $network
+-# Required-Stop:      $local_fs $named $network
++# Required-Start:     $local_fs $named $network $remote_fs
++# Required-Stop:      $local_fs $named $network $remote_fs
+ # Should-Start:       $remote_fs $syslog $time
+ # Should-Stop:        $remote_fs $syslog $time
+ # Default-Start:      2 3 4 5
+-- 

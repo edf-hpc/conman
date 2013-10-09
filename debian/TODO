@@ -1,9 +1,5 @@
-W: conman source: changelog-should-mention-nmu
-W: conman source: source-nmu-has-incorrect-version-number 0.2.7-1
 W: conman: new-package-should-close-itp-bug
-W: conman: script-in-etc-init.d-not-registered-via-update-rc.d etc/init.d/conman
 I: conman: hyphen-used-as-minus-sign usr/share/man/man5/conman.conf.5.gz:88
 I: conman: hyphen-used-as-minus-sign usr/share/man/man5/conman.conf.5.gz:160
-W: conman: binary-without-manpage usr/bin/conmen
 W: conman: executable-not-elf-or-script usr/lib/conman/alpha.exp
 W: conman: executable-not-elf-or-script usr/lib/conman/conman.exp

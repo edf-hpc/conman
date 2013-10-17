@@ -7,7 +7,7 @@ export DESTDIR := $(CURDIR)/debian/tmp
 #include /usr/share/dpkg/buildflags.mk
 
 override_dh_installinit:
-	dh_installinit --onlyscripts
+	dh_installinit --onlyscripts --no-start
 
 %:
 	dh $@

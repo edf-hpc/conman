@@ -9,5 +9,12 @@ export DESTDIR := $(CURDIR)/debian/tmp
 override_dh_installinit:
 	dh_installinit --onlyscripts --no-start
 
+override_dh_auto_configure:
+	./configure 				\
+		--prefix=/usr			\
+		--sysconfdir=/etc		\
+		--with-freeipmi			\
+		--with-tcp-wrappers
+
 %:
 	dh $@

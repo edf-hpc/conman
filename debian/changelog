@@ -1,3 +1,9 @@
+conman (0.2.7-2) calibre9; urgency=low
+
+  * This release is for calibre9.
+
+ -- Rémi Palancher <remi-externe.palancher@edf.fr>  Wed, 13 Apr 2016 10:46:18 +0200
+
 conman (0.2.7-1) UNRELEASED; urgency=low
 
   * Initial Release
